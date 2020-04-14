@@ -24,7 +24,7 @@ def count_clicks(token, link):
 
 if __name__ == '__main__':
   load_dotenv()
-  BITLY_TOKEN = os.getenv ('BITLY_API')
+  BITLY_TOKEN = os.getenv('BITLY_API')
   parser = argparse.ArgumentParser(description='converts url to bitly-url')
   parser.add_argument('url', type=str, help='url to be converted to bitly-url')
   args = parser.parse_args()
